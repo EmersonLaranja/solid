@@ -1,0 +1,16 @@
+{
+  "author": {
+    "name": "Emerson Laranja",
+    "url": "https://github.com/EmersonLaranja"
+  },
+  "engines": {
+    "node": ">=20.8.0"
+  },
+    "scripts": {
+      "t1":"clear;npx tsc primeira-tarefa/*.ts --outDir primeira-tarefa/dist; node primeira-tarefa/dist/main.js"
+    },
+    "dependencies": {
+      "typescript": "^5.3.2"
+    }
+  }
+  
