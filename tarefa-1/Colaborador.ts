@@ -1,4 +1,4 @@
-import { Cargos } from "../enum/cargos";
+import { Cargos } from "./enum/cargos";
 
 export default class Colaborador {
 

@@ -7,7 +7,11 @@
     "node": ">=20.8.0"
   },
     "scripts": {
-      "t1":"clear;npx tsc primeira-tarefa/*.ts --outDir primeira-tarefa/dist; node primeira-tarefa/dist/main.js"
+      "tarefa-1":"clear;npx tsc tarefa-1/*.ts --outDir tarefa-1/dist; node tarefa-1/dist/main.js",
+      "tarefa-2":"clear;npx tsc tarefa-2/*.ts --outDir tarefa-2/dist; node tarefa-2/dist/main.js",
+      "tarefa-3":"clear;npx tsc tarefa-3/*.ts --outDir tarefa-3/dist; node tarefa-3/dist/main.js",
+      "tarefa-4":"clear;npx tsc tarefa-4/*.ts --outDir tarefa-4/dist; node tarefa-4/dist/main.js",
+      "tarefa-5":"clear;npx tsc tarefa-5/*.ts --outDir tarefa-5/dist; node tarefa-5/dist/main.js"
     },
     "dependencies": {
       "typescript": "^5.3.2"
