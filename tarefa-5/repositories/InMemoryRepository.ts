@@ -1,16 +1,17 @@
 import Cliente from "../entities/Cliente";
+import IClienteRepository from "./interfaces/IClienteRepository";
 
-export default class InMemoryRepository {
+export default class InMemoryRepository implements IClienteRepository {
     private db: Cliente[];
 
     constructor() {
         this.db = [];
     }
 
-    adicionaCliente(cliente: Cliente) {
+    adicionarCliente(cliente: Cliente) {
         this.db.push(cliente);
     }
-    listaClientes() {
+    listarClientes() {
         return this.db;
     }
 }

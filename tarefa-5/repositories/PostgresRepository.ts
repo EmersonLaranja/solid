@@ -1,17 +1,24 @@
 import Cliente from "../entities/Cliente";
+import IClienteRepository from "./interfaces/IClienteRepository";
 
-export default class PostgresRepository {
+export default class PostgresRepository implements IClienteRepository {
     private db: Record<number, Cliente>;
 
     constructor() {
         this.db = {}
     }
+    adicionarCliente(cliente: Cliente): void {
+        return this.add(cliente)
+    }
+    listarClientes(): Cliente[] | Promise<Cliente[]> {
+        return this.list()
+    }
 
-    add(cliente: Cliente) {
+    private add(cliente: Cliente) {
         this.db[cliente.id] = cliente
     }
 
-    list() {
+    private list() {
         const clientes: Cliente[] = [];
 
         for (const chave in this.db) {
